@@ -1,0 +1,434 @@
+{
+    "env": "sandbox",
+    "port": 9094,
+    "region": "eu-west-1",
+    "dynamoTable": "a205915-dev-aaa-cache",
+    "dynamoTableUserInfo": "a205915-dev-userinfo-cache",
+    "services": {
+        "userattribute": {
+            "host": "adminws.icp2.cp.us1.reuintint.com",
+            "timeout": 10000,
+            "maxAge": 600000,
+            "poMaxAge": 86400,
+            "attributes": [
+                "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                "SETTING.COMMON.RDE_PRODUCT.NAME",
+                "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                "SETTING.RDE_USER_CURRENT_THEME",
+                "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                "PROFILE.FirstName",
+                "PROFILE.LastName",
+                "PROFILE.EmailAddress",
+                "PROFILE.UserId",
+                "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+            ]
+        }
+    },
+    "_": {
+        "dev": {
+            "env": "dev",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-dev-aaa-cache",
+            "dynamoTableUserInfo": "a205915-dev-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "dev1": {
+            "env": "dev",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-dev-aaa-cache",
+            "dynamoTableUserInfo": "a205915-dev-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "dev2": {
+            "env": "dev2",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-dev2-aaa-cache",
+            "dynamoTableUserInfo": "a205915-dev2-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "dev3": {
+            "env": "dev3",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-dev3-aaa-cache",
+            "dynamoTableUserInfo": "a205915-dev3-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "dev-emeas": {
+            "env": "dev",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-dev-aaa-cache",
+            "dynamoTableUserInfo": "a205915-dev-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "dev1-emeas": {
+            "env": "dev",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-dev-aaa-cache",
+            "dynamoTableUserInfo": "a205915-dev-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "dev2-emeas": {
+            "env": "dev2",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-dev2-aaa-cache",
+            "dynamoTableUserInfo": "a205915-dev2-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "dev3-emeas": {
+            "env": "dev3",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-dev3-aaa-cache",
+            "dynamoTableUserInfo": "a205915-dev3-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "alpha-emeas": {
+            "env": "alpha",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-alpha-aaa-cache",
+            "dynamoTableUserInfo": "a205915-alpha-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.icp2.cp.us1.reuintint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "beta-emeas": {
+            "env": "beta",
+            "port": 9094,
+            "region": "eu-west-1",
+            "dynamoTable": "a205915-beta-aaa-cache",
+            "dynamoTableUserInfo": "a205915-beta-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.cp.ntc.reuppint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        },
+        "beta-amers": {
+            "env": "beta",
+            "port": 9094,
+            "region": "us-east-1",
+            "dynamoTable": "a205915-beta-aaa-cache",
+            "dynamoTableUserInfo": "a205915-beta-userinfo-cache",
+            "services": {
+                "userattribute": {
+                    "host": "adminws.cp.ntc.reuppint.com",
+                    "timeout": 10000,
+                    "maxAge": 600000,
+                    "poMaxAge": 86400,
+                    "attributes": [
+                        "SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE",
+                        "SETTING.RDE_USER_CURRENT_TICK_COLOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR",
+                        "SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR",
+                        "SETTING.COMMON.RDE_PRODUCT.VERSION",
+                        "SETTING.COMMON.RDE_PRODUCT.NAME",
+                        "SETTING.COMMON.RDE_PRODUCT.INTERNALNAME",
+                        "SETTING.RDE_USER_CURRENT_THEME",
+                        "SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS",
+                        "PROFILE.FirstName",
+                        "PROFILE.LastName",
+                        "PROFILE.EmailAddress",
+                        "PROFILE.UserId",
+                        "SETTING.EIKONLIGHT.SETTINGS.WEBMODE"
+                    ]
+                }
+            }
+        }
+    }
+}

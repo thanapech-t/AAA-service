@@ -1,0 +1,73 @@
+node {
+    properties(
+        [
+            buildDiscarder(
+                logRotator(
+                    daysToKeepStr: '10',
+                    numToKeepStr: '10'
+                )
+            ),
+            disableConcurrentBuilds(),
+            pipelineTriggers([
+                [
+                    $class: 'GitLabPushTrigger',
+                    secretToken: 'j6tcb8f4h5njbfko49bb085bkjrbvg0d49b',
+                    triggerOnPush: true,
+                    triggerOnMergeRequest: true,
+                    ciSkip: false,
+                    branchFilterType: "All"
+                ]
+            ]),
+            gitLabConnection('sami.gitlab')
+        ]
+    )
+    stage("Test") {
+        git (
+            url: 'git@git.sami.int.thomsonreuters.com:fr_pageexpress/eks-aaa-service.git',
+            credentialsId: 's.px.cibuild',
+            branch: env.BRANCH_NAME
+        )
+
+        updateGitlabCommitStatus name: 'Test', state: 'running'
+
+        docker.image('amazon/dynamodb-local').withRun('-p 8094:8000') { dynamoContainer ->
+            docker.image('node:10').inside("--link ${dynamoContainer.id}:dynamohost") {
+                sh 'npm install'
+                sh 'npm run build'
+                sh 'npm run test:cicd'
+            }
+        }
+
+        updateGitlabCommitStatus name: 'Test', state: 'success'
+    }
+    stage("Upload to ECR") {
+        if (env.BRANCH_NAME == 'master') {
+            updateGitlabCommitStatus name: 'Upload to ECR', state: 'running'
+
+            sh '$(aws ecr get-login --no-include-email --region eu-west-1)'
+            sh 'docker build -t a205915-eks-aaa-service .'
+            sh 'docker tag a205915-eks-aaa-service:latest 636803032673.dkr.ecr.eu-west-1.amazonaws.com/a205915-ecs-aaa-service:latest'
+            sh 'docker push 636803032673.dkr.ecr.eu-west-1.amazonaws.com/a205915-ecs-aaa-service:latest'
+
+            updateGitlabCommitStatus name: 'Upload to ECR', state: 'success'
+        } else {
+            print 'SKIPPED'
+        }
+
+    }
+    stage("Deploy on sandbox") {
+        if (env.BRANCH_NAME == 'master') {
+
+            updateGitlabCommitStatus name: 'Deploy to sandbox', state: 'running'
+            sh '''
+# best practice is to get rid of all indent in sh block
+taskId=$(aws --profile=dev ecs list-tasks --cluster a205915-px-ecs-cluster --service-name a205915-aaa-service-alpha --query "taskArns[${index}]" --output text)
+aws --profile=dev ecs stop-task --cluster a205915-px-ecs-cluster --task $taskId
+'''
+            updateGitlabCommitStatus name: 'Deploy to sandbox', state: 'success'
+        }
+    }
+    stage("Deploy on AppServer") {
+        print 'TO BE IMPLEMENTED'
+    }
+}

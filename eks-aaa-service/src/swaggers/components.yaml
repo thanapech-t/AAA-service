@@ -1,0 +1,211 @@
+components:
+  schema:
+    user:
+      type: array
+      items:
+        type: object
+        properties:
+          Value:
+            type: string
+          Name:
+            type: string
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: px-access-key
+  parameters:
+    userId:
+      name: userId
+      description: User id value for attachment to the api path.
+      in: path
+      required: true
+      type: string
+      example: PAXTRA77552
+    po:
+      name: po
+      description: PO value for attachment to the api path.
+      in: path
+      required: true
+      type: string
+      example: GUIDES.CEONOFF
+  responses:
+    Success:
+      nameAndEmail:
+        description: Success
+        content:
+          'application/json':
+            schema:
+              type: object
+              properties:
+                userAttributeList:
+                  $ref: '#/components/schema/user'
+            examples:
+              userAttributeList:
+                $ref: '#/components/examples/nameAndEmail'
+      nameAndEmailList:
+        description: Success
+        content:
+          'application/json':
+            schema:
+              type: object
+              properties:
+                userIDs:
+                  $ref: '#/components/schema/user'
+            examples:
+              listUserId:
+                $ref: '#/components/examples/nameAndEmailList'
+      userInfo:
+        description: Success
+        content:
+          'application/json':
+            schema:
+              type: object
+              properties:
+                userAttributeList:
+                  $ref: '#/components/schema/user'
+            examples:
+              userAttributeList:
+                $ref: '#/components/examples/userInfo'
+      userInfoPost:
+        description: Success
+        content:
+          'application/json':
+            schema:
+              type: object
+              properties:
+                userAttributeList:
+                  $ref: '#/components/schema/user'
+            examples:
+              userAttributeList:
+                $ref: '#/components/examples/userInfoPost'
+      userInfoDelete:
+        description: Success
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                example: {}
+      po:
+        description: Success
+        content:
+          'application/json':
+            schema:
+              type: object
+              properties:
+                userAttributeList:
+                  $ref: '#/components/schema/user'
+            examples:
+              userAttributeList:
+                $ref: '#/components/examples/po'
+    UnauthorizedError:
+      description: API key is missing or invalid
+      headers:
+        px-access-key:
+          schema:
+            type: string
+    InternalServerError:
+      description: Internal server error
+      content:
+        application/json':
+          schema:
+            type: object
+            properties:
+              code:
+                type: string
+                example: AAA-1001
+              message:
+                type: string
+                example: Unexpected error, cannot get username and email from the API
+  examples:
+    nameAndEmail:
+      value:
+        userAttributeList:
+          - Value: Chakkapan
+            Name: PROFILE.FirstName
+          - Value: Rapeepunpienpen
+            Name: PROFILE.LastName
+          - Value: chakkapan.rapeepunpi@thomsonreuters.com
+            Name: PROFILE.EmailAddress
+    nameAndEmailList:
+      value:
+        PAXTRA77552:
+          - Value: Chakkapan
+            Name: PROFILE.FirstName
+          - Value: Rapeepunpienpen
+            Name: PROFILE.LastName
+          - Value: chakkapan.rapeepunpi@thomsonreuters.com
+            Name: PROFILE.EmailAddress
+        PAXTRA77553:
+          - Value: Peggy
+            Name: PROFILE.FirstName
+          - Value: Ng
+            Name: PROFILE.LastName
+          - Value: peggy.ng@thomsonreuters.com
+            Name: PROFILE.EmailAddress
+        PAXTRA77554:
+          - Value: Ivan
+            Name: PROFILE.FirstName
+          - Value: Ko
+            Name: PROFILE.LastName
+          - Value: ivan.ko@thomsonreuters.com
+            Name: PROFILE.EmailAddress
+    userInfo:
+      value:
+        userAttributeList:
+          - Value: Chakkapan
+            Name: PROFILE.FirstName
+          - Value: Rapeepunpienpen
+            Name: PROFILE.LastName
+          - Value: chakkapan.rapeepunpi@thomsonreuters.com
+            Name: PROFILE.EmailAddress
+          - Value: chakkapan.rapeepunpi@thomsonreuters.com
+            Name: PROFILE.UserId
+          - Value: European
+            Name: SETTING.RDE_USER_CURRENT_TICK_COLOR
+          - Value: Refinitiv Eikon
+            Name: SETTING.COMMON.RDE_PRODUCT.NAME
+          - Value: "Yes"
+            Name: SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DAY_LIGHT_SAVING_SWITCH
+          - Value: Refinitiv Eikon
+            Name: SETTING.COMMON.RDE_PRODUCT.INTERNALNAME
+          - Value: ","
+            Name: SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_GROUPSEPARATOR
+          - Value: "1.0"
+            Name: SETTING.COMMON.RDE_PRODUCT.VERSION
+          - Value: RefinitivWorkspace
+            Name: SETTING.EIKONLIGHT.SETTINGS.WEBMODE
+          - Value: "false"
+            Name: SETTING.COMPLIANCE_MANAGEMENT_ACCELUS_ALERTS
+          - Value: h:mm:ss tt
+            Name: SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEPATTERN
+          - Value: "."
+            Name: SETTING.COMMON.REGIONAL_SETTINGS.NUMBERFORMAT_DECIMALSEPARATOR
+          - Value: Charcoal
+            Name: SETTING.RDE_USER_CURRENT_THEME
+          - Value: en-US
+            Name: SETTING.COMMON.REGIONAL_SETTINGS.UI_LANGUAGE
+          - Value: dddd, MMMM d, yyyy
+            Name: SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_DATEPATTERN
+          - Value: "/"
+            Name: SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_SEPARATOR
+          - Value: SE Asia Standard Time
+            Name: SETTING.COMMON.REGIONAL_SETTINGS.DATEFORMAT_TIMEZONE
+    userInfoPost:
+      value:
+        userAttributeList:
+          - Value: Chakkapan
+            Name: PROFILE.FirstName
+          - Value: Rapeepunpienpen
+            Name: PROFILE.LastName
+          - Value: "null"
+            Name: PROFILES.uuid
+          - Value: "null"
+            Name: PROFILES.UP
+    po:
+      value:
+        userAttributeList:
+          - Value: true
+            Name: PERM.GUIDES.CEONOFF
